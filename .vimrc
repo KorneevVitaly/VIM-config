@@ -16,8 +16,10 @@ Plugin 'itchyny/lightline.vim'
 Plugin 'tpope/vim-eunuch'
 Plugin 'scrooloose/nerdtree'
 
+Plugin 'ludovicchabant/vim-gutentags'
+
 Plugin 'jiangmiao/auto-pairs'
-Plugin 'terryma/vim-multiple-cursors'
+"Plugin 'terryma/vim-multiple-cursors'
 Plugin 'mattn/emmet-vim'
 Plugin 'matze/vim-move'
 
@@ -41,19 +43,19 @@ set wrap linebreak nolist
 colorscheme sublimemonokai
 set cursorline
 
+set tags=tags
+
 let g:netrw_liststyle = 3
 let g:netrw_banner = 0
 let g:netrw_altv=1
 
 " My comment line shortcuts
-set laststatus=2
 source ~/.vim/vcomments.vim
 map <C-_> :call Comment()<CR>
 map <C-?> :call Uncomment()<CR>
 
 " Other plugins settings
+set laststatus=2
 map <C-o> :NERDTreeToggle<CR>
 let NERDTreeQuitOnOpen=1
 let g:move_key_modifier = 'C'
-
-
