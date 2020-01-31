@@ -1,3 +1,6 @@
+set langmenu=en_US.UTF-8
+"language en
+
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -29,7 +32,8 @@ call vundle#end()            " required
 filetype plugin indent on    " required
 
 
-"set encoding=UTF-8
+
+set encoding=UTF-8
 set number
 set nowritebackup
 set nobackup
