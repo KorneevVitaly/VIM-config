@@ -39,6 +39,7 @@ filetype plugin indent on    " required
 
 set encoding=UTF-8
 set number
+set shortmess-=S
 syntax on
 set expandtab
 set tabstop=4
