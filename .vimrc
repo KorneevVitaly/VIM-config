@@ -15,7 +15,7 @@ Plugin 'valloric/youcompleteme'
 Plugin 'ludovicchabant/vim-gutentags'
 Plugin 'dense-analysis/ale'
 Plugin 'nvie/vim-flake8'
-Plugin 'vim-syntastic/syntastic'
+"Plugin 'vim-syntastic/syntastic'
 
 " For Vim appearance
 Plugin 'ErichDonGubler/vim-sublime-monokai'
@@ -23,10 +23,11 @@ Plugin 'itchyny/lightline.vim'
 Plugin 'tpope/vim-eunuch'
 Plugin 'scrooloose/nerdtree'
 Plugin 'yggdroot/indentline'
+Plugin 'kien/rainbow_parentheses.vim'
 
 " Usefull behaviours
 Plugin 'jiangmiao/auto-pairs'
-Plugin 'terryma/vim-multiple-cursors'
+"Plugin 'terryma/vim-multiple-cursors'
 Plugin 'mattn/emmet-vim'
 Plugin 'matze/vim-move'
 Plugin 'Vimjas/vim-python-pep8-indent'
@@ -86,6 +87,13 @@ let g:python_pep8_indent_hang_closing = 1
 " indentline 
 "let g:indentLine_setColors = 0
 
+" Rainbow braces
+let g:rbpt_max = 16
+let g:rbpt_loadcmd_toggle = 0
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBrace
 
 
 " Syntastic
