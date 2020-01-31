@@ -21,6 +21,7 @@ Plugin 'itchyny/lightline.vim'
 Plugin 'tpope/vim-eunuch'
 Plugin 'scrooloose/nerdtree'
 
+Plugin 'yggdroot/indentline'
 
 Plugin 'jiangmiao/auto-pairs'
 "Plugin 'terryma/vim-multiple-cursors'
@@ -76,6 +77,9 @@ let g:ale_completion_enabled = 0
 " vim-python-pep8-indent
 let g:python_pep8_indent_multiline_string = -2
 let g:python_pep8_indent_hang_closing = 1
+
+
+"let g:indentLine_setColors = 0
 
 " Syntastic
 "set statusline+=%#warningmsg#
