@@ -23,7 +23,7 @@ Plugin 'itchyny/lightline.vim'
 Plugin 'tpope/vim-eunuch'
 Plugin 'scrooloose/nerdtree'
 Plugin 'yggdroot/indentline'
-Plugin 'kien/rainbow_parentheses.vim'
+Plugin 'luochen1990/rainbow'
 
 " Usefull behaviours
 Plugin 'jiangmiao/auto-pairs'
@@ -88,13 +88,7 @@ let g:python_pep8_indent_hang_closing = 1
 "let g:indentLine_setColors = 0
 
 " Rainbow braces
-let g:rbpt_max = 16
-let g:rbpt_loadcmd_toggle = 0
-au VimEnter * RainbowParenthesesToggle
-au Syntax * RainbowParenthesesLoadRound
-au Syntax * RainbowParenthesesLoadSquare
-au Syntax * RainbowParenthesesLoadBrace
-
+let g:rainbow_active = 1 "set to 0 if you want to enable it later via :RainbowToggle
 
 " Syntastic
 "set statusline+=%#warningmsg#
