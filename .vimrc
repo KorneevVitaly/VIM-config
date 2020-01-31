@@ -10,25 +10,27 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
+" For syntax and code analize
 Plugin 'valloric/youcompleteme'
 Plugin 'ludovicchabant/vim-gutentags'
 Plugin 'dense-analysis/ale'
 Plugin 'nvie/vim-flake8'
-"Plugin 'vim-syntastic/syntastic'
+Plugin 'vim-syntastic/syntastic'
 
+" For Vim appearance
 Plugin 'ErichDonGubler/vim-sublime-monokai'
 Plugin 'itchyny/lightline.vim'
 Plugin 'tpope/vim-eunuch'
 Plugin 'scrooloose/nerdtree'
-
 Plugin 'yggdroot/indentline'
 
+" Usefull behaviours
 Plugin 'jiangmiao/auto-pairs'
-"Plugin 'terryma/vim-multiple-cursors'
+Plugin 'terryma/vim-multiple-cursors'
 Plugin 'mattn/emmet-vim'
 Plugin 'matze/vim-move'
-
 Plugin 'Vimjas/vim-python-pep8-indent'
+
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -56,6 +58,9 @@ let g:netrw_liststyle = 3
 let g:netrw_banner = 0
 let g:netrw_altv = 1
 
+" -- Custom script files --
+" My Shebang header template
+source ~/.vim/customautoheadfiles.vim
 " My comment line shortcuts
 source ~/.vim/vcomments.vim
 map <C-_> :call Comment()<CR>
@@ -78,8 +83,10 @@ let g:ale_completion_enabled = 0
 let g:python_pep8_indent_multiline_string = -2
 let g:python_pep8_indent_hang_closing = 1
 
-
+" indentline 
 "let g:indentLine_setColors = 0
+
+
 
 " Syntastic
 "set statusline+=%#warningmsg#
