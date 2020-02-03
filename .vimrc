@@ -22,6 +22,7 @@ Plugin 'ErichDonGubler/vim-sublime-monokai'
 Plugin 'itchyny/lightline.vim'
 Plugin 'tpope/vim-eunuch'
 Plugin 'scrooloose/nerdtree'
+Plugin 'severin-lemaignan/vim-minimap'
 Plugin 'yggdroot/indentline'
 Plugin 'luochen1990/rainbow'
 
