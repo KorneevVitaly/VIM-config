@@ -33,6 +33,7 @@ Plugin 'matze/vim-move'
 Plugin 'auxiliary/vim-layout'
 Plugin 'Vimjas/vim-python-pep8-indent'
 Plugin 'farmergreg/vim-lastplace'
+Plugin 'pseewald/vim-anyfold'
 
 " For html
 Plugin 'alvan/vim-closetag'
@@ -106,6 +107,11 @@ let g:closetag_filetypes = 'html,xhtml,phtml'
 let g:closetag_xhtml_filetypes = 'xhtml,jsx'
 let g:closetag_shortcut = '>'
 
+" Folds
+autocmd Filetype * AnyFoldActivate
+let g:anyfold_fold_comments=1
+set foldlevel=0 " Close all folds
+"set foldlevel=99 " Open all folds
 
 " Syntastic
 "set statusline+=%#warningmsg#
