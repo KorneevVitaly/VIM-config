@@ -30,8 +30,14 @@ Plugin 'jiangmiao/auto-pairs'
 "Plugin 'terryma/vim-multiple-cursors'
 Plugin 'mattn/emmet-vim'
 Plugin 'matze/vim-move'
+Plugin 'auxiliary/vim-layout'
 Plugin 'Vimjas/vim-python-pep8-indent'
+Plugin 'farmergreg/vim-lastplace'
 
+" For html
+Plugin 'alvan/vim-closetag'
+Plugin 'gorodinskiy/vim-coloresque'
+Plugin 'turbio/bracey.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -53,6 +59,8 @@ set wrap linebreak nolist
 "colorscheme ron
 colorscheme sublimemonokai
 set cursorline
+filetype indent on
+set shiftwidth=4
 
 set tags=tags
 
@@ -90,6 +98,14 @@ let g:python_pep8_indent_hang_closing = 1
 
 " Rainbow braces
 let g:rainbow_active = 1 "set to 0 if you want to enable it later via :RainbowToggle
+
+" For html
+let g:closetag_filenames = '*.html,*.xhtml,*.phtml'
+let g:closetag_xhtml_filenames = '*.xhtml,*.jsx'
+let g:closetag_filetypes = 'html,xhtml,phtml'
+let g:closetag_xhtml_filetypes = 'xhtml,jsx'
+let g:closetag_shortcut = '>'
+
 
 " Syntastic
 "set statusline+=%#warningmsg#
