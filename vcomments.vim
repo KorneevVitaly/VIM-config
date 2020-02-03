@@ -6,6 +6,8 @@ function! Comment()
     silent s:^:\/\/:g
   elseif ext == 'vim'
     silent s:^:\":g
+  elseif ext == 'html'
+    silent s/^\(.*\)$/<!-- \1 -->/
   endif
 endfunction
 
@@ -17,5 +19,8 @@ function! Uncomment()
     silent s:^\/\/::g
   elseif ext == 'vim'
     silent s:^\"::g
+  elseif ext == 'html'
+    silent s/-->//
+    silent s/<!-- //
   endif
 endfunction
