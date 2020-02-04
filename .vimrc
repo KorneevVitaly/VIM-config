@@ -19,12 +19,15 @@ Plugin 'nvie/vim-flake8'
 
 " For Vim appearance
 Plugin 'ErichDonGubler/vim-sublime-monokai'
-Plugin 'itchyny/lightline.vim'
+"Plugin 'itchyny/lightline.vim'
+Plugin 'vim-airline/vim-airline'
 Plugin 'tpope/vim-eunuch'
 Plugin 'scrooloose/nerdtree'
 Plugin 'severin-lemaignan/vim-minimap'
 Plugin 'yggdroot/indentline'
 Plugin 'luochen1990/rainbow'
+Plugin 'chr4/nginx.vim'
+Plugin 'ryanoasis/vim-devicons'
 
 " Usefull behaviours
 Plugin 'jiangmiao/auto-pairs'
@@ -35,6 +38,7 @@ Plugin 'auxiliary/vim-layout'
 Plugin 'Vimjas/vim-python-pep8-indent'
 Plugin 'farmergreg/vim-lastplace'
 Plugin 'pseewald/vim-anyfold'
+Plugin 'wesQ3/vim-windowswap'
 
 " For html
 Plugin 'alvan/vim-closetag'
@@ -111,8 +115,8 @@ let g:closetag_shortcut = '>'
 " Folds
 autocmd Filetype * AnyFoldActivate
 let g:anyfold_fold_comments=1
-set foldlevel=0 " Close all folds
-"set foldlevel=99 " Open all folds
+"set foldlevel=0 " Close all folds
+set foldlevel=99 " Open all folds
 
 " Syntastic
 "set statusline+=%#warningmsg#
