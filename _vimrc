@@ -73,7 +73,7 @@ let g:netrw_altv = 1
 
 set laststatus=2
 "set guifont=Source\ Code\ Pro\ for\ Powerline:h10:cANSI
-set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h10:cANSI
+"set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h10:cANSI
 let g:airline_powerline_fonts = 1
 map <C-o> :NERDTreeToggle<CR>
 let NERDTreeQuitOnOpen=1
