@@ -27,6 +27,7 @@ Plugin 'severin-lemaignan/vim-minimap'
 Plugin 'yggdroot/indentline'
 Plugin 'luochen1990/rainbow'
 Plugin 'ryanoasis/vim-devicons'
+Plugin 'enricobacis/vim-airline-clock'
 
 " Usefull behaviours
 Plugin 'jiangmiao/auto-pairs'
