@@ -21,13 +21,14 @@ Plugin 'nvie/vim-flake8'
 Plugin 'ErichDonGubler/vim-sublime-monokai'
 "Plugin 'itchyny/lightline.vim'
 Plugin 'vim-airline/vim-airline'
+Plugin 'ryanoasis/vim-devicons'
+Plugin 'enricobacis/vim-airline-clock'
 Plugin 'tpope/vim-eunuch'
 Plugin 'scrooloose/nerdtree'
 Plugin 'severin-lemaignan/vim-minimap'
 Plugin 'yggdroot/indentline'
 Plugin 'luochen1990/rainbow'
 Plugin 'chr4/nginx.vim'
-Plugin 'ryanoasis/vim-devicons'
 
 " Usefull behaviours
 Plugin 'jiangmiao/auto-pairs'
@@ -39,6 +40,8 @@ Plugin 'Vimjas/vim-python-pep8-indent'
 Plugin 'farmergreg/vim-lastplace'
 Plugin 'pseewald/vim-anyfold'
 Plugin 'wesQ3/vim-windowswap'
+
+Plugin 'ctrlpvim/ctrlp.vim'
 
 " For html
 Plugin 'alvan/vim-closetag'
@@ -84,6 +87,8 @@ map <C-?> :call Uncomment()<CR>
 
 " Other plugins settings
 set laststatus=2
+"let g:airline#extensions#clock#auto = 0
+let g:airline#extensions#clock#format = '| %H:%M'
 map <C-o> :NERDTreeToggle<CR>
 let NERDTreeQuitOnOpen=1
 let g:move_key_modifier = 'C'
