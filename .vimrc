@@ -87,12 +87,24 @@ map <C-?> :call Uncomment()<CR>
 
 " Other plugins settings
 set laststatus=2
-"let g:airline#extensions#clock#auto = 0
-let g:airline#extensions#clock#format = '| %H:%M'
 map <C-o> :NERDTreeToggle<CR>
 let NERDTreeQuitOnOpen=1
 let g:move_key_modifier = 'C'
 let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/youcompleteme/third_party/ycmd/.ycm_extra_conf.py'
+
+" Airline
+"let g:airline#extensions#clock#auto = 0
+let g:airline_powerline_fonts = 1
+"let g:airline#extensions#cursormode#enabled = 1
+let g:airline#extensions#ale#enabled = 1
+let g:airline#extensions#gutentags#enabled = 1
+"let g:airline#extensions#bufferline#enabled = 0
+"let g:airline#extensions#bufferline#overwrite_variables = 0
+let g:airline#extensions#clock#format = '%H:%M'
+"let g:airline#extensions#tabline#enabled = 1
+"let g:airline#extensions#tabline#tabs_label = ''
+"let g:airline#extensions#tabline#show_buffers = 0
+
 
 " ALE
 let g:ale_linters = {'python': ['pycodestyle', 'pyflakes', 'pylint', 'flake8', 'mypy']}
@@ -104,7 +116,7 @@ let g:ale_completion_enabled = 0
 let g:python_pep8_indent_multiline_string = -2
 let g:python_pep8_indent_hang_closing = 1
 
-" indentline 
+" indentline
 "let g:indentLine_setColors = 0
 
 " Rainbow braces
