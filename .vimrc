@@ -40,8 +40,10 @@ Plugin 'Vimjas/vim-python-pep8-indent'
 Plugin 'farmergreg/vim-lastplace'
 Plugin 'pseewald/vim-anyfold'
 Plugin 'wesQ3/vim-windowswap'
+Plugin 'KabbAmine/vCoolor.vim'
+"Plugin 'junegunn/fzf'
 
-Plugin 'ctrlpvim/ctrlp.vim'
+"Plugin 'ctrlpvim/ctrlp.vim'
 
 " For html
 Plugin 'alvan/vim-closetag'
@@ -70,12 +72,16 @@ colorscheme sublimemonokai
 set cursorline
 filetype indent on
 set shiftwidth=4
+set splitbelow
+set splitright
 
 set tags=tags
 
 let g:netrw_liststyle = 3
 let g:netrw_banner = 0
 let g:netrw_altv = 1
+
+set guifont=DejaVuSansMono\ Nerd\ Font\ Book\ 10
 
 " -- Custom script files --
 " My Shebang header template
@@ -87,8 +93,11 @@ map <C-?> :call Uncomment()<CR>
 
 " Other plugins settings
 set laststatus=2
+let g:vcoolor_map = '<leader>c'
 map <C-o> :NERDTreeToggle<CR>
+autocmd BufEnter * lcd %:p:h
 let NERDTreeQuitOnOpen=1
+"let NERDTreeShowHidden=1
 let g:move_key_modifier = 'C'
 let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/youcompleteme/third_party/ycmd/.ycm_extra_conf.py'
 
@@ -108,8 +117,8 @@ let g:airline#extensions#clock#format = '%H:%M'
 
 " ALE
 let g:ale_linters = {'python': ['pycodestyle', 'pyflakes', 'pylint', 'flake8', 'mypy']}
-let g:ale_sign_error = '❌'
-let g:ale_sign_warning = '⚠️'
+let g:ale_sign_error = ''
+let g:ale_sign_warning = ''
 let g:ale_completion_enabled = 0
 
 " vim-python-pep8-indent
