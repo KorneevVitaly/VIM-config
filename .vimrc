@@ -16,23 +16,28 @@ Plugin 'ludovicchabant/vim-gutentags'
 Plugin 'dense-analysis/ale'
 Plugin 'nvie/vim-flake8'
 "Plugin 'vim-syntastic/syntastic'
+Plugin 'tpope/vim-fugitive'
+Plugin 'airblade/vim-gitgutter'
 
 " For Vim appearance
 Plugin 'ErichDonGubler/vim-sublime-monokai'
+Plugin 'fatih/molokai'
 "Plugin 'itchyny/lightline.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'ryanoasis/vim-devicons'
-Plugin 'enricobacis/vim-airline-clock'
+"Plugin 'enricobacis/vim-airline-clock'
 Plugin 'tpope/vim-eunuch'
 Plugin 'scrooloose/nerdtree'
+Plugin 'xuyuanp/nerdtree-git-plugin'
 Plugin 'severin-lemaignan/vim-minimap'
 Plugin 'yggdroot/indentline'
+Plugin 'sheerun/vim-polyglot'
 Plugin 'luochen1990/rainbow'
 Plugin 'chr4/nginx.vim'
 
 " Usefull behaviours
 Plugin 'jiangmiao/auto-pairs'
-"Plugin 'terryma/vim-multiple-cursors'
+Plugin 'terryma/vim-multiple-cursors'
 Plugin 'mattn/emmet-vim'
 Plugin 'matze/vim-move'
 Plugin 'auxiliary/vim-layout'
@@ -42,7 +47,7 @@ Plugin 'pseewald/vim-anyfold'
 Plugin 'wesQ3/vim-windowswap'
 Plugin 'KabbAmine/vCoolor.vim'
 "Plugin 'junegunn/fzf'
-
+Plugin 'majutsushi/tagbar'
 "Plugin 'ctrlpvim/ctrlp.vim'
 
 " For html
@@ -54,7 +59,7 @@ Plugin 'turbio/bracey.vim'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
-set encoding=UTF-8
+set encoding=utf-8
 set number
 set shortmess-=S
 syntax on
@@ -68,12 +73,17 @@ set completeopt-=preview
 set wrap linebreak nolist
 "set textwidth=80
 "colorscheme ron
-colorscheme sublimemonokai
+"colorscheme sublimemonokai
+colorscheme molokai
+let g:molokai_original = 1
+let g:rehash256 = 1
 set cursorline
 filetype indent on
 set shiftwidth=4
 set splitbelow
 set splitright
+autocmd CursorMoved * exe printf('match WildMenu /\V\<%s\>/', escape(expand('<cword>'), '/\'))
+"let g:minimap_highlight='Visual'
 
 set tags=tags
 
@@ -95,11 +105,14 @@ map <C-?> :call Uncomment()<CR>
 set laststatus=2
 let g:vcoolor_map = '<leader>c'
 map <C-o> :NERDTreeToggle<CR>
+nmap <F8> :TagbarToggle<CR>
 autocmd BufEnter * lcd %:p:h
 let NERDTreeQuitOnOpen=1
+let NERDTreeAutoDeleteBuffer = 1
 "let NERDTreeShowHidden=1
 let g:move_key_modifier = 'C'
 let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/youcompleteme/third_party/ycmd/.ycm_extra_conf.py'
+
 
 " Airline
 "let g:airline#extensions#clock#auto = 0
@@ -109,7 +122,7 @@ let g:airline#extensions#ale#enabled = 1
 let g:airline#extensions#gutentags#enabled = 1
 "let g:airline#extensions#bufferline#enabled = 0
 "let g:airline#extensions#bufferline#overwrite_variables = 0
-let g:airline#extensions#clock#format = '%H:%M'
+"let g:airline#extensions#clock#format = '%H:%M'
 "let g:airline#extensions#tabline#enabled = 1
 "let g:airline#extensions#tabline#tabs_label = ''
 "let g:airline#extensions#tabline#show_buffers = 0
