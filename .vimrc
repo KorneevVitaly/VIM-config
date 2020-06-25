@@ -1,65 +1,57 @@
 set nocompatible              " be iMproved, required
-filetype off                  " required
+"filetype off                  " required
 
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
-
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
+call plug#begin('~/.vim/plugged')
 
 " For syntax and code analize
-Plugin 'valloric/youcompleteme'
-Plugin 'ludovicchabant/vim-gutentags'
-Plugin 'dense-analysis/ale'
-Plugin 'nvie/vim-flake8'
-"Plugin 'vim-syntastic/syntastic'
-Plugin 'tpope/vim-fugitive'
-Plugin 'airblade/vim-gitgutter'
+Plug 'valloric/youcompleteme'
+Plug 'ludovicchabant/vim-gutentags'
+Plug 'dense-analysis/ale'
+Plug 'nvie/vim-flake8'
+"Plug 'vim-syntastic/syntastic'
+Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
 
 " For Vim appearance
-Plugin 'ErichDonGubler/vim-sublime-monokai'
-Plugin 'fatih/molokai'
-"Plugin 'itchyny/lightline.vim'
-Plugin 'vim-airline/vim-airline'
-Plugin 'ryanoasis/vim-devicons'
-"Plugin 'enricobacis/vim-airline-clock'
-Plugin 'tpope/vim-eunuch'
-Plugin 'scrooloose/nerdtree'
-Plugin 'xuyuanp/nerdtree-git-plugin'
-Plugin 'severin-lemaignan/vim-minimap'
-Plugin 'yggdroot/indentline'
-Plugin 'sheerun/vim-polyglot'
-Plugin 'luochen1990/rainbow'
-Plugin 'chr4/nginx.vim'
+Plug 'ErichDonGubler/vim-sublime-monokai'
+Plug 'fatih/molokai'
+"Plug 'itchyny/lightline.vim'
+Plug 'vim-airline/vim-airline'
+Plug 'ryanoasis/vim-devicons'
+"Plug 'enricobacis/vim-airline-clock'
+Plug 'tpope/vim-eunuch'
+Plug 'scrooloose/nerdtree'
+Plug 'xuyuanp/nerdtree-git-plugin'
+Plug 'severin-lemaignan/vim-minimap'
+Plug 'yggdroot/indentline'
+Plug 'sheerun/vim-polyglot'
+Plug 'luochen1990/rainbow'
+Plug 'chr4/nginx.vim'
 
 " Usefull behaviours
-Plugin 'jiangmiao/auto-pairs'
-Plugin 'terryma/vim-multiple-cursors'
-Plugin 'mattn/emmet-vim'
-Plugin 'matze/vim-move'
-Plugin 'auxiliary/vim-layout'
-Plugin 'Vimjas/vim-python-pep8-indent'
-Plugin 'farmergreg/vim-lastplace'
-Plugin 'pseewald/vim-anyfold'
-Plugin 'wesQ3/vim-windowswap'
-Plugin 'KabbAmine/vCoolor.vim'
-"Plugin 'junegunn/fzf'
-Plugin 'majutsushi/tagbar'
-"Plugin 'ctrlpvim/ctrlp.vim'
+Plug 'jiangmiao/auto-pairs'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'mattn/emmet-vim'
+Plug 'matze/vim-move'
+Plug 'auxiliary/vim-layout'
+Plug 'Vimjas/vim-python-pep8-indent'
+Plug 'farmergreg/vim-lastplace'
+Plug 'pseewald/vim-anyfold'
+Plug 'wesQ3/vim-windowswap'
+Plug 'KabbAmine/vCoolor.vim'
+"Plug 'junegunn/fzf'
+Plug 'majutsushi/tagbar'
+"Plug 'ctrlpvim/ctrlp.vim'
 
 " For html
-Plugin 'alvan/vim-closetag'
-Plugin 'gorodinskiy/vim-coloresque'
-Plugin 'turbio/bracey.vim'
+Plug 'alvan/vim-closetag'
+Plug 'gorodinskiy/vim-coloresque'
+Plug 'turbio/bracey.vim'
 
 " All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
+call plug#end()
 
-set encoding=utf-8
+set encoding=UTF-8
 set number
 set shortmess-=S
 syntax on
