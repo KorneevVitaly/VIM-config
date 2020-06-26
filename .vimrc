@@ -63,6 +63,8 @@ set mouse=a
 set backspace=indent,eol,start
 set completeopt-=preview
 set wrap linebreak nolist
+let &t_TI = ""
+let &t_TE = ""
 "set textwidth=80
 "colorscheme ron
 "colorscheme sublimemonokai
@@ -98,7 +100,7 @@ set laststatus=2
 let g:vcoolor_map = '<leader>c'
 map <C-o> :NERDTreeToggle<CR>
 nmap <F8> :TagbarToggle<CR>
-autocmd BufEnter * lcd %:p:h
+"autocmd BufEnter * lcd %:p:h "open NerdTree relative to current file
 let NERDTreeQuitOnOpen=1
 let NERDTreeAutoDeleteBuffer = 1
 "let NERDTreeShowHidden=1
