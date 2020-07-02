@@ -65,6 +65,7 @@ set completeopt-=preview
 set wrap linebreak nolist
 let &t_TI = ""
 let &t_TE = ""
+set colorcolumn=80
 "set textwidth=80
 "colorscheme ron
 "colorscheme sublimemonokai
