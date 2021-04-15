@@ -1,0 +1,13 @@
+set encoding=UTF-8
+set number
+set shortmess-=S
+syntax on
+set expandtab
+set tabstop=4
+set incsearch
+set foldenable
+set mouse=a
+set backspace=indent,eol,start
+set completeopt-=preview
+set wrap linebreak nolist
+"set colorcolumn=80
